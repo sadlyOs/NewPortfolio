@@ -1,0 +1,109 @@
+:root {
+    --black-color: #000000;
+    --light-black-color: #181823;
+    --light-grey-color: #DEECF9;
+    --dark-dark-color: #C7E0F4;
+    --white-color: #FFFFFF;
+    --primary-color: #5221E6;
+    --green-color: #3CC74E;
+    --pink-color: #E95D90;
+    --peach-color: #FFF3E4;
+    --violet-color: #FBE4FF;
+}
+
+@font-face {
+    font-family: "SenRegular";
+    src: url('./fonts/Sen/static/Sen-Regular.ttf');
+}
+
+@font-face {
+    font-family: "SenBold";
+    src: url('./fonts/Sen/static/Sen-Bold.ttf');
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'SenRegular';
+    color: var(--white-color);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'SenBold';
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.header {
+    background: var(--black-color);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.header__text {
+    font-size: 1.5rem;
+}
+
+.header__menu-container {
+    display: none;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 768px;
+        box-sizing: border-box;
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__menu-container {
+        display: block;
+    }
+
+    .menu__list {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+    }
+
+    .menu__list > li {
+        padding: 24px 32px;
+    }
+    
+    .menu__list > li:last-child {
+        background: var(--primary-color);
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1440px;
+    }
+}
