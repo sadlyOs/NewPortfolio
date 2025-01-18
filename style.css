@@ -293,8 +293,10 @@ span {
     }
 
     .col2__other-text {
-        width: 55%;
+        width: 40%;
     }
 
-    
+    .col3__other-text {
+        margin: 24px 0 134px 0;
+    }
 }
