@@ -39,6 +39,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin: 0;
     font-weight: 200;
+    color: var(--low-black);
+    font-size: 18px;    
 }
 
 span {
@@ -134,7 +136,7 @@ span {
     font-size: 21px;
 }
 
-.block__number {
+.block__number p{
     font-size: 117px;
 }
 
@@ -166,7 +168,6 @@ span {
 }
 .col3__other-text {
     margin: 24px 0 90px 0;
-    color: var(--low-black);
 }
 .col3__text-footer>p::after {
     width: 100%;
@@ -174,6 +175,16 @@ span {
     background: var(--light-grey-color);
 }
 
+
+.col4__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+.first-block__header-text {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
 
 @media (min-width: 576px) {
     .container {
@@ -205,6 +216,8 @@ span {
         background: var(--primary-color);
     }
 }
+
+
 
 
 @media (min-width: 768px) {
